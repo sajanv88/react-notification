@@ -1,0 +1,76 @@
+/* add css styles here (optional) */
+/* loading font awesome for icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* notify container element style */
+.notifyContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.notifyIcon {
+  font-size: 18px;
+  color: #FFFFFF;
+
+}
+.content {
+  flex: .9;
+}
+.content p {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: 'Times';
+  font-weight: 800;
+}
+
+.buttonClose {
+  color: #FFFFFF;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 18px;
+}
+
+
+/* notify container element background colour */
+.info {
+  background-color: hsl(204, 86%, 53%);
+}
+.success {
+  background-color: hsl(141, 71%, 48%);
+}
+.danger {
+  background-color: hsl(348, 100%, 61%);
+}
+.warning {
+  background-color: hsl(48, 100%, 67%);
+}
+
+
+.miniContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+}
+
+.mini {
+  display: inline-block;
+  border-radius: 90%;
+  width: 50px;
+  height: 50px;
+  background-color: #4d4c4d;  
+  color: #FFFFFF;
+  cursor: pointer;
+  margin-left: -10px;
+}
+.legend {
+  color: #FFFFFF;
+  background-color: #4d4c4d;
+  padding: 10px;
+}
+.icon {
+  position: relative;
+  left: 18px;
+  top: 15px;
+}
