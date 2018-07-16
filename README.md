@@ -4,9 +4,10 @@
 
 [![NPM](https://img.shields.io/npm/v/react-notification.svg)](https://www.npmjs.com/package/react-notification) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-*Release version*:
+*Build Status*:
 
-[![Coverage](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](http://github.com/sajanv88/coverage)
+[![Build Status](https://github.com/sajanv88/react-notification.git?branch=master)](https://github.com/{sajanv88}/react-notification)
+
 
 ## Install
 
