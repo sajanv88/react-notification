@@ -58,4 +58,4 @@ class Example extends Component {
 
 ## License
 
-MIT © [sajankumar](https://github.com/sajankumar)
+MIT © [sajankumar](https://github.com/sajanv88)
