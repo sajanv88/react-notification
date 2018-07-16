@@ -4,11 +4,6 @@
 
 [![NPM](https://img.shields.io/npm/v/react-notification.svg)](https://www.npmjs.com/package/react-notification) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-*Build Status*:
-
-[![Build Status](https://github.com/sajanv88/react-notification.git?branch=master)](https://github.com/{sajanv88}/react-notification)
-
-
 ## Install
 
 ```bash

@@ -177,17 +177,24 @@ var NotificationStack = function (_Component2) {
   createClass(NotificationStack, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      for (var i = 0, len = this.props.children.length; i < len; i++) {
-        var type = this.props.children[i].type;
-        if (!type.prototype || type.prototype && type.prototype.constructor.name !== 'Notification') {
-          throw new Error('NotificationPanel must be placed inside the Notification Component');
+      if (this.props.children) {
+        if (Array.isArray(this.props.children)) {
+          for (var i = 0, len = this.props.children.length; i < len; i++) {
+            var type = this.props.children[i].type;
+            if (!type.prototype || type.prototype && type.prototype.constructor.name !== 'Notification') {
+              throw new Error('NotificationPanel must be placed inside the Notification Component');
+            }
+          }
+        } else {
+          if (!Array.isArray(this.props.children) && !this.props.children.type.prototype || this.props.children.type.prototype.constructor.name !== 'Notification') {
+            throw new Error('NotificationPanel must be placed inside the Notification Component');
+          }
         }
       }
     }
   }, {
     key: 'componentDidCatch',
     value: function componentDidCatch(error) {
-      console.log(error);
       throw new Error(error);
     }
   }, {
@@ -220,7 +227,7 @@ var NotificationStack = function (_Component2) {
     key: 'render',
     value: function render() {
       var limit = this.props.limit || 2;
-      if (this.props.children.length > limit && !this.state.isExpand) {
+      if (this.props.children && this.props.children.length > limit && !this.state.isExpand) {
         return this.minimizeNotification();
       }
       return React__default.createElement(
